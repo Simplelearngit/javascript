@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Six digit otp</title>
+</head>
+<body>
+<script type="text/javascript">
+	let str=(Math.round(Math.random()*10000000)).toString();
+	let fotp=(str.length>6?str.substr(0,str.length-1):str)
+
+	document.write(fotp)
+</script>
+</body>
+</html>

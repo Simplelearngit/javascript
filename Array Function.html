@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Function</title>
+</head>
+<body>
+<script type="text/javascript">
+	let arr =[1,2,3,4,5,6,7];
+	console.log(arr)
+	arr[arr.length]="hiiii";// add ale at last
+	console.log(arr)
+	arr.push("hello") //adds ele at last (push : 1,2,3,4,5,6,7,hiiii,hello)
+	console.log("push :" +arr)
+	arr.pop();//Removes ele from last (pop : 1,2,3,4,5,6,7,hiiii)
+	console.log("pop :" +arr)
+	arr.unshift("first");//add ele at first (unshift : first,1,2,3,4,5,6,7,hiiii)
+	console.log("unshift :" +arr)
+	arr.shift();//Removes ele from first (shift : 1,2,3,4,5,6,7,hiiii)
+	console.log("shift :" +arr)
+
+</script>
+</body>
+</html>
