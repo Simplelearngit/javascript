@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object creation using function</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//1.object literals
+		//2.constructor function
+		//3.es6 classes
+		//4.object.create()
+
+
+		function subjects(a,b,c) {
+			this.sub1=a
+			this.sub2=b;
+			this.sub3=c;
+
+			console.log(this.sub1)
+			console.log(this.sub2)
+			console.log(this.sub3)
+		}
+
+		let obj=new subjects("sql","Java","manual")
+		console.log(obj.sub1)
+		console.log(obj.sub2)
+		console.log(obj.sub3)
+	</script>
+
+</body>
+</html>

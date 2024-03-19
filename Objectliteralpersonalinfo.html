@@ -1,0 +1,56 @@
+<!DOCTYPE html>     
+<html>
+<head>
+	<title>Object literal</title>
+</head>
+<body>
+	<script type="text/javascript">
+	let person1={
+		nae:"Nilam",
+		age:21,
+		Phno:8765465436,
+		native:"Kashti",
+		edu:{
+			graduation:"BE",
+			yop:2023,
+			college:"HSBPVTS PCOE"
+		},
+		skills:["Sql","Java","Webtech","Web services","Manual Testing"],
+		hobbies:["Listning Music","Writing Poems,Stories","Reading Books","Watching movies"],
+		strengths:["Quickly grab new things or technologies"]
+	}	
+
+	let person = Object.create(person1);
+	person.name="Kajal"
+	document.write(person.name+"<br>")
+	document.write("I Know the following technologies:"+"<br>")
+	person.skills.forEach((subj,cnt)=>document.write(++cnt + " ."+subj+"<br>"))
+	document.write("My hobbies are:"+"<br>")
+	person.hobbies.forEach((hob,cnt)=>document.write(++cnt + " ."+hob+"<br>"))
+
+	document.write("My strength is:"+"<br>")
+	person.strengths.forEach((str,cnt)=>document.write(++cnt + " ."+str+"<br>"))
+
+	document.write(`I have completed my graduation in ${person.edu.graduation} in the year ${person.edu.yop} from ${person.edu.college} college.`)
+	
+
+	document.write("<br>")
+    document.write(person1.name+"<br>")
+	document.write("I Know the following technologies:"+"<br>")
+	person1.skills.forEach((subj,cnt)=>document.write(++cnt + " ."+subj+"<br>"))
+	document.write("My hobbies are:"+"<br>")
+	person1.hobbies.forEach((hob,cnt)=>document.write(++cnt + " ."+hob+"<br>"))
+
+	document.write("My strength is:"+"<br>")
+	person1.strengths.forEach((str,cnt)=>document.write(++cnt + " ."+str+"<br>"))
+
+	document.write(`I have completed my graduation in ${person1.edu.graduation} in the year ${person1.edu.yop} from ${person1.edu.college} college.`)
+
+
+
+
+
+	</script>
+
+</body>
+</html>
